@@ -47,6 +47,12 @@ const DISCIPLINES = [
     body: "Classical and modern ML for scoring, forecasting, propensity and anomaly detection. The unglamorous models that quietly move the P&L.",
     examples: ["Risk scoring", "Demand forecasting", "Anomaly detection"],
   },
+  {
+    icon: Code2,
+    title: "Custom solutions",
+    body: "From POC and MVP to multi-location, multi-tenant enterprise systems — self-scaling, resource-lean and secure by design. We build the platform, not just the model.",
+    examples: ["Enterprise platforms", "Multi-tenant SaaS", "Workflow systems"],
+  },
 ];
 
 const ENGAGEMENT = [
