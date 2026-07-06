@@ -139,9 +139,6 @@ function HomePage() {
             See our ventures
           </Link>
         </div>
-        <div className="mt-6 text-[11px] text-foreground/45">
-          Registered in England &amp; Wales · Milton Keynes, UK · Sheridan, WY, USA
-        </div>
       </section>
 
       {/* PROOF BAR */}
