@@ -81,6 +81,44 @@ function AboutPage() {
   );
 }
 
+const TEAM = [
+  {
+    initial: "C",
+    name: "Christian Kumar",
+    role: "Chief Executive Officer",
+    linkedin: "https://www.linkedin.com/in/christiankumar/",
+  },
+  {
+    initial: "H",
+    name: "Hudson Paul",
+    role: "Chief Operating Officer",
+    linkedin: "https://www.linkedin.com/in/hudsonpaul1/",
+  },
+  {
+    initial: "J",
+    name: "John Swaroop",
+    role: "Chief Technology Officer",
+    linkedin: "https://www.linkedin.com/in/john-swaroop-4389961b7/",
+  },
+  {
+    initial: "L",
+    name: "Luke Anglin",
+    role: "Chief Revenue Officer",
+    linkedin: "https://www.linkedin.com/in/lukeanglin/",
+  },
+  {
+    initial: "R",
+    name: "Reuel Philip",
+    role: "Product Specialist",
+    linkedin: "https://www.linkedin.com/in/reuel-philip/",
+  },
+];
+
+const absoluteLinkedInUrl = (url: string) => {
+  const cleanedUrl = url.trim().replace(/^https?:\/\//, "");
+  return `https://${cleanedUrl}`;
+};
+
 function Fact({ k, v }: { k: string; v: string }) {
   return (
     <div className="bg-background p-6">
