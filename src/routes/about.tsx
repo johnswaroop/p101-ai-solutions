@@ -169,13 +169,14 @@ const absoluteLinkedInUrl = (url: string) => {
   return `https://${cleanedUrl}`;
 };
 
-function Fact({ k, v }: { k: string; v: string }) {
+function Fact({ k, v, sub }: { k: string; v: string; sub?: string }) {
   return (
     <div className="bg-background p-6">
       <div className="text-[10px] uppercase tracking-[0.22em] text-foreground/50 mb-2">
         {k}
       </div>
       <div className="text-sm text-foreground/80">{v}</div>
+      {sub && <div className="text-[11px] text-foreground/50 mt-1">{sub}</div>}
     </div>
   );
 }
