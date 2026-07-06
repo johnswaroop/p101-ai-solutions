@@ -65,6 +65,43 @@ function AboutPage() {
       </section>
 
       <section className="border-t border-border/40">
+        <div className="max-w-5xl mx-auto px-6 py-20">
+          <EyebrowLabel>The team</EyebrowLabel>
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight max-w-3xl mb-10">
+            Built by operators, not vendors.
+          </h2>
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-px bg-border/40">
+            {TEAM.map((member) => (
+              <div key={member.name} className="bg-background p-5">
+                <div className="h-10 w-10 border border-foreground/20 flex items-center justify-center text-sm font-light tracking-wider mb-4">
+                  {member.initial}
+                </div>
+                <a
+                  href={absoluteLinkedInUrl(member.linkedin)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium hover:underline"
+                  aria-label={`${member.name} on LinkedIn`}
+                >
+                  {member.name}
+                </a>
+                <div className="text-[11px] text-foreground/50 mt-1">{member.role}</div>
+                <a
+                  href={absoluteLinkedInUrl(member.linkedin)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center gap-1 text-[11px] text-foreground/60 hover:text-foreground"
+                  aria-label={`${member.name} on LinkedIn`}
+                >
+                  <Linkedin className="h-3 w-3" /> LinkedIn
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-border/40">
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">
           <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
             Want to talk?
