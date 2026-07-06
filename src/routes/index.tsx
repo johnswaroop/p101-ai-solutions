@@ -25,7 +25,7 @@ const CAPABILITIES = [
   {
     icon: LineChart,
     title: "Predictive AI",
-    body: "Classical and modern ML for scoring, forecasting and anomaly detection — the boring wins that compound quietly.",
+    body: "Scoring, forecasting and anomaly detection — the unglamorous models that quietly move the P&L.",
   },
   {
     icon: Code2,
