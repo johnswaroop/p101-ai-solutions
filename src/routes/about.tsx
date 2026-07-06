@@ -28,11 +28,12 @@ function AboutPage() {
       <section className="max-w-3xl mx-auto px-6 pt-20 pb-16">
         <EyebrowLabel>About P101</EyebrowLabel>
         <h1 className="text-4xl md:text-6xl font-light tracking-tight leading-[1.05]">
-          A small UK company doing serious AI work.
+          Products that operate. Infrastructure we own.<br />
+          <span className="text-foreground/55">AI outcomes from proof of concept to enterprise.</span>
         </h1>
         <div className="mt-10 space-y-6 text-base text-foreground/75 leading-relaxed">
           <p>
-            P101 Limited is an applied-AI company registered in England &amp; Wales (company no. 17063831) and based in London. We build software that operates — not proofs of concept — and we deliver it on our own private-inference infrastructure.
+            We build software that operates — not proofs of concept — and deliver it on our own private-inference infrastructure. P101 Limited is registered in England &amp; Wales (company no. 17063831) and based in London.
           </p>
           <p>
             We own two products.{" "}
@@ -48,7 +49,7 @@ function AboutPage() {
             Our consulting arm develops highly scalable, resource-lean AI outcomes and custom software solutions across agentic, generative, computer vision and primary predictive AI — from POC and MVP to multi-location, multi-tenant enterprise systems. We work with teams who need AI and software to be a system, not a slide.
           </p>
           <p>
-            We take a small number of engagements at a time, chosen for fit. We build with open-source models on infrastructure we control. Your data doesn't train someone else's product.
+            We take on select engagements, chosen for fit. We build with open-source models on infrastructure we control. Your data doesn't train someone else's product.
           </p>
         </div>
       </section>
