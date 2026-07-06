@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Linkedin } from "lucide-react";
 import { Page, EyebrowLabel } from "@/components/SiteChrome";
 
 export const Route = createFileRoute("/about")({
