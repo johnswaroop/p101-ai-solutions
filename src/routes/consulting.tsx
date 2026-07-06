@@ -43,8 +43,8 @@ const DISCIPLINES = [
   },
   {
     icon: LineChart,
-    title: "Primary predictive AI",
-    body: "Classical and modern ML for scoring, forecasting, propensity and anomaly detection. The unglamorous models that quietly move the P&L.",
+    title: "Predictive AI",
+    body: "Classical and modern ML for scoring, forecasting, propensity and anomaly detection — the unglamorous models that quietly move the P&L.",
     examples: ["Risk scoring", "Demand forecasting", "Anomaly detection"],
   },
 ];
