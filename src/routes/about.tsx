@@ -55,13 +55,13 @@ function AboutPage() {
       </section>
 
       <section className="border-t border-border/40">
-        <div className="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-px bg-border/40">
+        <div className="max-w-5xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-3 gap-px bg-border/40">
           <Fact k="Founded" v="2025" />
-          <Fact k="Registered" v="England & Wales · Co. no. 17063831" />
+          <Fact k="Registered" v="England & Wales" sub="Co. no. 17063831" />
           <Fact k="Based" v="London, United Kingdom" />
           <Fact k="Products" v="DcernX · Xylor" />
-          <Fact k="Consulting" v="Agentic · Generative · CV · Predictive · Custom solutions" />
-          <Fact k="Stack" v="Private inference · Open-source models · Own infrastructure" />
+          <Fact k="Consulting" v="Agentic · Generative · CV · Predictive" sub="+ Custom software, POC → enterprise" />
+          <Fact k="Stack" v="Private inference" sub="Open-source models · Own infrastructure" />
         </div>
       </section>
 
