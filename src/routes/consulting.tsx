@@ -47,13 +47,8 @@ const DISCIPLINES = [
     body: "Classical and modern ML for scoring, forecasting, propensity and anomaly detection. The unglamorous models that quietly move the P&L.",
     examples: ["Risk scoring", "Demand forecasting", "Anomaly detection"],
   },
-  {
-    icon: Code2,
-    title: "Custom solutions",
-    body: "From POC and MVP to multi-location, multi-tenant enterprise systems — self-scaling, resource-lean and secure by design. We build the platform, not just the model.",
-    examples: ["Enterprise platforms", "Multi-tenant SaaS", "Workflow systems"],
-  },
 ];
+
 
 const ENGAGEMENT = [
   {
@@ -105,7 +100,8 @@ function ConsultingPage() {
         <div className="max-w-5xl mx-auto px-6 py-20">
           <EyebrowLabel>What we build</EyebrowLabel>
           <h2 className="text-3xl md:text-4xl font-light tracking-tight max-w-3xl mb-10">
-            Four disciplines. One delivery team.
+            Four AI disciplines.{" "}
+            <span className="text-foreground/55">One delivery team.</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-px bg-border/40">
             {DISCIPLINES.map((d) => {
@@ -129,8 +125,42 @@ function ConsultingPage() {
               );
             })}
           </div>
+
+          {/* Custom solutions — the wrapper around the AI */}
+          <div className="mt-px bg-border/40">
+            <div className="bg-background p-8 md:p-10 grid md:grid-cols-5 gap-8 items-start">
+              <div className="md:col-span-2">
+                <div className="flex items-center gap-3 mb-4">
+                  <Code2 className="h-5 w-5 text-foreground/60" />
+                  <div className="text-[10px] uppercase tracking-[0.22em] text-foreground/50">
+                    And the software around it
+                  </div>
+                </div>
+                <div className="text-2xl md:text-3xl font-light tracking-tight">
+                  Custom solutions.{" "}
+                  <span className="text-foreground/55">POC to enterprise.</span>
+                </div>
+              </div>
+              <div className="md:col-span-3">
+                <p className="text-sm text-foreground/70 leading-relaxed mb-5">
+                  A model on its own isn't a product. We build the systems the models live inside — from proof of concept and MVP through to multi-location, multi-tenant enterprise platforms that are self-scaling, resource-lean and secure by design.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["Enterprise platforms", "Multi-tenant SaaS", "Workflow systems", "Edge & on-prem", "Integrations & APIs"].map((e) => (
+                    <span
+                      key={e}
+                      className="text-[11px] px-2 py-1 border border-border/60 text-foreground/70"
+                    >
+                      {e}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
 
       {/* WHY */}
       <section className="border-t border-border/40">

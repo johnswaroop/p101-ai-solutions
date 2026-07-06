@@ -137,13 +137,14 @@ function HomePage() {
         <div className="max-w-5xl mx-auto px-6 py-20">
           <EyebrowLabel>Consulting capabilities</EyebrowLabel>
           <h2 className="text-3xl md:text-4xl font-light tracking-tight max-w-3xl mb-4">
-            Four disciplines. One delivery team.
+            Four AI disciplines.{" "}
+            <span className="text-foreground/55">Plus the software around them.</span>
           </h2>
           <p className="text-sm text-foreground/65 max-w-2xl mb-10">
-            Highly scalable, resource-lean AI outcomes delivered end-to-end — from problem framing to production, on our own infrastructure stack.
+            Highly scalable, resource-lean outcomes delivered end-to-end — from problem framing to production, on our own infrastructure stack.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border/40">
-            {CAPABILITIES.map((c) => {
+            {CAPABILITIES.slice(0, 4).map((c) => {
               const Icon = c.icon;
               return (
                 <div key={c.title} className="bg-background p-6">
@@ -153,6 +154,18 @@ function HomePage() {
                 </div>
               );
             })}
+          </div>
+          {/* Custom solutions — spans full width as the wrapper */}
+          <div className="mt-px bg-border/40">
+            <div className="bg-background p-6 md:p-7 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+              <div className="flex items-center gap-3 md:min-w-[220px]">
+                <Code2 className="h-4 w-4 text-foreground/60" />
+                <div className="text-sm font-medium">Custom solutions</div>
+              </div>
+              <div className="text-xs text-foreground/65 leading-relaxed flex-1">
+                {CAPABILITIES[4].body} From proof of concept and MVP through to multi-tenant enterprise deployments — the systems the models live inside.
+              </div>
+            </div>
           </div>
           <div className="mt-8">
             <Link
@@ -164,6 +177,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* PRINCIPLES */}
       <section className="border-t border-border/40">
