@@ -36,8 +36,9 @@ function ContactPage() {
         <div className="mt-12 grid sm:grid-cols-2 gap-px bg-border/40 border border-border/40">
           <ContactCard
             icon={Mail}
-            label="Consulting & partnerships"
+            label="Consulting, press & partnerships"
             value="hudson@p101limited.com"
+            sub="We reply personally, usually within one working day."
             href="mailto:hudson@p101limited.com"
           />
           <ContactCard
@@ -48,7 +49,13 @@ function ContactPage() {
             href="https://dcernx.com"
           />
           <ContactCard icon={MapPin} label="Registered office" value="London, United Kingdom" sub="Company no. 17063831" />
-          <ContactCard icon={Mail} label="Press & general" value="hudson@p101limited.com" href="mailto:hudson@p101limited.com" />
+          <ContactCard
+            icon={Mail}
+            label="Careers & collaborations"
+            value="Introduce yourself"
+            sub="Send a short note and a link — CV, GitHub, portfolio."
+            href="mailto:hudson@p101limited.com?subject=Introduction"
+          />
         </div>
 
         <div className="mt-10">

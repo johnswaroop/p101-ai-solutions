@@ -43,8 +43,8 @@ const DISCIPLINES = [
   },
   {
     icon: LineChart,
-    title: "Primary predictive AI",
-    body: "Classical and modern ML for scoring, forecasting, propensity and anomaly detection. The unglamorous models that quietly move the P&L.",
+    title: "Predictive AI",
+    body: "Classical and modern ML for scoring, forecasting, propensity and anomaly detection — the unglamorous models that quietly move the P&L.",
     examples: ["Risk scoring", "Demand forecasting", "Anomaly detection"],
   },
 ];
@@ -83,14 +83,20 @@ function ConsultingPage() {
           <span className="text-foreground/55">not just in the demo.</span>
         </h1>
         <p className="mt-6 text-base text-foreground/70 max-w-2xl leading-relaxed">
-  P101's consulting arm develops highly scalable, resource-lean AI outcomes and custom software solutions for teams that need systems that actually operate. From POC and MVP to multi-location, multi-tenant enterprise deployments — self-scaling, resource-lean and secure. We deliver end-to-end on our own infrastructure stack and open-source private inference models — the same stack that runs DcernX.
+          We deliver AI outcomes and custom software for teams that need working systems, not slideware — from proof of concept and MVP through to multi-location, multi-tenant enterprise deployments. Everything ships end-to-end on our own infrastructure and open-source private inference — the same stack that runs DcernX.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="mailto:hudson@p101limited.com?subject=Consulting%20enquiry"
+            href="mailto:hudson@p101limited.com?subject=Consulting%20discovery%20call"
             className="h-11 px-6 inline-flex items-center gap-2 bg-foreground text-background text-sm hover:opacity-90"
           >
-            Start a conversation <ArrowRight className="h-3.5 w-3.5" />
+            Book a discovery call <ArrowRight className="h-3.5 w-3.5" />
+          </a>
+          <a
+            href="#how-we-engage"
+            className="h-11 px-6 inline-flex items-center text-sm border border-foreground/20 hover:border-foreground/60 transition-colors"
+          >
+            How we engage
           </a>
         </div>
       </section>
@@ -180,8 +186,34 @@ function ConsultingPage() {
         </div>
       </section>
 
-      {/* ENGAGEMENT */}
+      {/* WHO WE WORK WITH */}
       <section className="border-t border-border/40">
+        <div className="max-w-5xl mx-auto px-6 py-20">
+          <EyebrowLabel>Who we work with</EyebrowLabel>
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight max-w-3xl mb-10">
+            Operators with a real problem.{" "}
+            <span className="text-foreground/55">Not experiments in search of a use case.</span>
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border/40">
+            {[
+              { k: "Scale-ups & mid-market", v: "Teams past product-market fit that need AI or a platform to unlock the next order of magnitude." },
+              { k: "Enterprises with constraints", v: "Regulated, data-sensitive, or on-prem environments where private inference isn't optional." },
+              { k: "Funds & investors", v: "Private-market teams standardising diligence and portfolio operations — often via DcernX." },
+              { k: "Founders with a workflow-heavy product", v: "AI-native products that would take 18 months to build from scratch — and 3 on Xylor." },
+              { k: "Operations & back-office leaders", v: "Real automation of high-volume, judgement-heavy work with auditability the compliance team accepts." },
+              { k: "Not a fit", v: "Chatbot experiments, AI-for-AI's-sake, and anyone allergic to evidence and evaluation." },
+            ].map((s) => (
+              <div key={s.k} className="bg-background p-6">
+                <div className="text-sm font-medium mb-2">{s.k}</div>
+                <div className="text-xs text-foreground/65 leading-relaxed">{s.v}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ENGAGEMENT */}
+      <section id="how-we-engage" className="border-t border-border/40 scroll-mt-16">
         <div className="max-w-5xl mx-auto px-6 py-20">
           <EyebrowLabel>How we engage</EyebrowLabel>
           <h2 className="text-3xl md:text-4xl font-light tracking-tight max-w-3xl mb-10">
@@ -207,13 +239,13 @@ function ConsultingPage() {
             Bring us the problem.
           </h2>
           <p className="text-sm text-foreground/65 max-w-xl mx-auto mb-10">
-            We take on a small number of client engagements at a time — chosen for fit, not for logo count.
+            We run a small number of engagements at a time — chosen for fit, not for logo count. A 30-minute call is enough to tell if we're right for each other.
           </p>
           <a
-            href="mailto:hudson@p101limited.com?subject=Consulting%20enquiry"
+            href="mailto:hudson@p101limited.com?subject=Consulting%20discovery%20call"
             className="h-11 px-6 inline-flex items-center gap-2 bg-foreground text-background text-sm hover:opacity-90"
           >
-            Email hudson@p101limited.com <ArrowRight className="h-3.5 w-3.5" />
+            Book a discovery call <ArrowRight className="h-3.5 w-3.5" />
           </a>
         </div>
       </section>

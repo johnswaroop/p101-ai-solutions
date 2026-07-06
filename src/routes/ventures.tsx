@@ -83,10 +83,10 @@ function VenturesPage() {
               Configurable embedded-AI platform
             </div>
             <a
-              href="mailto:hudson@p101limited.com?subject=Xylor%20enquiry"
+              href="mailto:hudson@p101limited.com?subject=Xylor%20platform%20—%20request%20a%20walkthrough"
               className="h-10 px-5 inline-flex items-center gap-2 bg-foreground text-background text-sm hover:opacity-90"
             >
-              Request access <ArrowRight className="h-3.5 w-3.5" />
+              Request a walkthrough <ArrowRight className="h-3.5 w-3.5" />
             </a>
           </div>
           <div className="md:col-span-3">

@@ -3,6 +3,49 @@ import { ArrowRight, Cpu, Layers, Sparkles, ShieldCheck, Eye, LineChart, Code2 }
 import { Page, EyebrowLabel } from "@/components/SiteChrome";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "P101 Limited — Applied AI, private-inference infrastructure and custom software" },
+      {
+        name: "description",
+        content:
+          "P101 Limited builds production AI on our own private-inference stack. Parent of DcernX and Xylor, with a consulting arm delivering agentic, generative, computer vision and predictive AI — plus custom software from POC to multi-tenant enterprise.",
+      },
+      { property: "og:title", content: "P101 Limited — Applied AI, infrastructure and custom software" },
+      {
+        property: "og:description",
+        content:
+          "Products, private-inference infrastructure and consulting from London. Parent of DcernX and Xylor.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "P101 Limited",
+          url: "https://p101limited.com",
+          email: "hudson@p101limited.com",
+          foundingDate: "2025",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "London",
+            addressCountry: "GB",
+          },
+          identifier: "17063831",
+          description:
+            "Applied AI company building on private-inference infrastructure. Parent of DcernX and Xylor with a consulting arm delivering agentic, generative, computer vision and predictive AI, plus custom software from POC to enterprise.",
+          brand: [
+            { "@type": "Brand", name: "DcernX", url: "https://dcernx.com" },
+            { "@type": "Brand", name: "Xylor" },
+          ],
+        }),
+      },
+    ],
+  }),
   component: HomePage,
 });
 
@@ -25,7 +68,7 @@ const CAPABILITIES = [
   {
     icon: LineChart,
     title: "Predictive AI",
-    body: "Classical and modern ML for scoring, forecasting and anomaly detection — the boring wins that compound quietly.",
+    body: "Scoring, forecasting and anomaly detection — the unglamorous models that quietly move the P&L.",
   },
   {
     icon: Code2,
