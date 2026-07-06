@@ -83,14 +83,20 @@ function ConsultingPage() {
           <span className="text-foreground/55">not just in the demo.</span>
         </h1>
         <p className="mt-6 text-base text-foreground/70 max-w-2xl leading-relaxed">
-  P101's consulting arm develops highly scalable, resource-lean AI outcomes and custom software solutions for teams that need systems that actually operate. From POC and MVP to multi-location, multi-tenant enterprise deployments — self-scaling, resource-lean and secure. We deliver end-to-end on our own infrastructure stack and open-source private inference models — the same stack that runs DcernX.
+          We deliver AI outcomes and custom software for teams that need working systems, not slideware — from proof of concept and MVP through to multi-location, multi-tenant enterprise deployments. Everything ships end-to-end on our own infrastructure and open-source private inference — the same stack that runs DcernX.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="mailto:hudson@p101limited.com?subject=Consulting%20enquiry"
+            href="mailto:hudson@p101limited.com?subject=Consulting%20discovery%20call"
             className="h-11 px-6 inline-flex items-center gap-2 bg-foreground text-background text-sm hover:opacity-90"
           >
-            Start a conversation <ArrowRight className="h-3.5 w-3.5" />
+            Book a discovery call <ArrowRight className="h-3.5 w-3.5" />
+          </a>
+          <a
+            href="#how-we-engage"
+            className="h-11 px-6 inline-flex items-center text-sm border border-foreground/20 hover:border-foreground/60 transition-colors"
+          >
+            How we engage
           </a>
         </div>
       </section>
