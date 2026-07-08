@@ -1,9 +1,8 @@
-import { Link } from "@tanstack/react-router";
+import { NavLink, Link } from "react-router-dom";
 import type { ReactNode } from "react";
 
 export function SiteNav() {
   const links = [
-    { to: "/", label: "P101" },
     { to: "/ventures", label: "Ventures" },
     { to: "/consulting", label: "Consulting" },
     { to: "/about", label: "About" },
@@ -17,15 +16,18 @@ export function SiteNav() {
           P101<span className="text-foreground/40">.limited</span>
         </Link>
         <div className="flex items-center gap-6">
-          {links.slice(1).map((l) => (
-            <Link
+          {links.map((l) => (
+            <NavLink
               key={l.to}
               to={l.to}
-              className="text-xs text-foreground/60 hover:text-foreground transition-colors"
-              activeProps={{ className: "text-xs text-foreground" }}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-xs text-foreground"
+                  : "text-xs text-foreground/60 hover:text-foreground transition-colors"
+              }
             >
               {l.label}
-            </Link>
+            </NavLink>
           ))}
           <a
             href="mailto:hudson@p101limited.com"
@@ -73,7 +75,6 @@ export function SiteFooter() {
             { label: "hudson@p101limited.com", href: "mailto:hudson@p101limited.com" },
           ]}
         />
-
       </div>
       <div className="border-t border-border/40">
         <div className="max-w-5xl mx-auto px-6 py-4 text-[11px] text-foreground/45 flex justify-between">
