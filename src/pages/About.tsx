@@ -118,6 +118,33 @@ export default function About() {
           </div>
         </section>
 
+        {/* SECURITY & COMPLIANCE */}
+        <section className="border-t border-border/40">
+          <div className="max-w-5xl mx-auto px-6 py-20">
+            <EyebrowLabel>Security &amp; compliance</EyebrowLabel>
+            <h2 className="text-3xl md:text-4xl font-light tracking-tight max-w-3xl mb-10">
+              Your data stays yours. <span className="text-foreground/55">By architecture, not policy.</span>
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border/40">
+              {[
+                { k: "Private inference", v: "Open-source models run on infrastructure we control. No prompts, embeddings or outputs sent to third-party model APIs." },
+                { k: "GDPR by design", v: "UK-registered controller. Data-processing agreements available. Right-to-erasure and export supported end-to-end." },
+                { k: "Data isolation", v: "Per-tenant boundaries, encrypted at rest and in transit. Least-privilege access with full audit trails." },
+                { k: "On-prem &amp; edge ready", v: "Deploy the same stack into your VPC, your data centre, or at the edge — not just our cloud." },
+                { k: "Evaluation &amp; observability", v: "Every model call is logged, evaluated and reviewable. Nothing ships without a measurable eval baseline." },
+                { k: "Responsible AI", v: "Human review baked into agent workflows. Confidence, citations and provenance surfaced to end users." },
+              ].map((item) => (
+                <div key={item.k} className="bg-background p-6">
+                  <div className="text-sm font-medium mb-2" dangerouslySetInnerHTML={{ __html: item.k }} />
+                  <div className="text-xs text-foreground/65 leading-relaxed" dangerouslySetInnerHTML={{ __html: item.v }} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+
         <section className="border-t border-border/40">
           <div className="max-w-5xl mx-auto px-6 py-20">
             <EyebrowLabel>The team</EyebrowLabel>
