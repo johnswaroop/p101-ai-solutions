@@ -98,8 +98,8 @@ export function SiteFooter() {
         <div>
           <div className="text-sm font-medium mb-2">P101 Limited</div>
           <p className="text-foreground/55 leading-relaxed">
-            Applied AI infrastructure, products and consulting. Registered in
-            England &amp; Wales, company no. 17063831.
+            Applied AI infrastructure, products and consulting. Registered in England &amp; Wales,
+            company no. 17063831.
           </p>
         </div>
         <FooterCol
@@ -145,9 +145,7 @@ function FooterCol({
 }) {
   return (
     <div>
-      <div className="text-[10px] uppercase tracking-[0.22em] text-foreground/50 mb-3">
-        {title}
-      </div>
+      <div className="text-[10px] uppercase tracking-[0.22em] text-foreground/50 mb-3">{title}</div>
       <ul className="space-y-2">
         {items.map((it) => (
           <li key={it.label}>

@@ -43,9 +43,7 @@ export function SEO({
           <meta key={i} name={m.name} content={m.content} />
         ),
       )}
-      {jsonLd && (
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      )}
+      {jsonLd && <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>}
       {children}
     </Helmet>
   );

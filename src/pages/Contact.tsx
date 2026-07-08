@@ -22,14 +22,20 @@ export default function Contact() {
           <div className="md:col-span-2">
             <EyebrowLabel>Contact</EyebrowLabel>
             <h1 className="text-4xl md:text-5xl font-light tracking-tight leading-[1.05]">
-              Start a<br />conversation.
+              Start a<br />
+              conversation.
             </h1>
             <p className="mt-6 text-sm text-foreground/70 leading-relaxed max-w-md">
-              Tell us what you're trying to solve, who it's for and any constraints we should know about. We reply personally — usually within one working day.
+              Tell us what you're trying to solve, who it's for and any constraints we should know
+              about. We reply personally — usually within one working day.
             </p>
 
             <div className="mt-8 space-y-4 text-sm">
-              <ContactLine icon={Mail} label="hudson@p101limited.com" href="mailto:hudson@p101limited.com" />
+              <ContactLine
+                icon={Mail}
+                label="hudson@p101limited.com"
+                href="mailto:hudson@p101limited.com"
+              />
               <ContactLine icon={Building2} label="dcernx.com" href="https://dcernx.com" />
               <ContactLine icon={MapPin} label="Milton Keynes, UK — P101 Limited" />
               <ContactLine icon={MapPin} label="Sheridan, WY, USA — P101 LLC" />
@@ -61,7 +67,11 @@ function ContactLine({
     </div>
   );
   return href ? (
-    <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer">
+    <a
+      href={href}
+      target={href.startsWith("http") ? "_blank" : undefined}
+      rel="noopener noreferrer"
+    >
       {inner}
     </a>
   ) : (

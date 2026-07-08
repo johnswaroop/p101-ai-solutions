@@ -119,46 +119,46 @@ export default function Home() {
             }}
           />
           <div className="max-w-5xl mx-auto px-6 pt-24 pb-20">
-          <EyebrowLabel>Applied AI · Infrastructure · Products · Consulting</EyebrowLabel>
-          <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.02] max-w-4xl">
-            Serious AI, built lean.
-            <br />
-            <span className="text-foreground/55">On our stack. On your terms.</span>
-          </h1>
-          <p className="mt-8 text-base md:text-lg text-foreground/70 max-w-2xl leading-relaxed">
-            We build AI that runs in production — and the custom software to scale it. Own
-            infrastructure, open-source private inference, no lock-in. From first POC to
-            multi-tenant enterprise. Through{" "}
-            <a
-              href="https://dcernx.com"
-              className="underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
-            >
-              DcernX
-            </a>{" "}
-            and{" "}
-            <Link
-              to="/ventures#xylor"
-              className="underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
-            >
-              Xylor
-            </Link>
-            , plus our consulting practice, we deliver agentic, generative, computer vision and
-            predictive AI that actually ships.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Link
-              to="/consulting"
-              className="h-11 px-6 inline-flex items-center gap-2 bg-foreground text-background text-sm hover:opacity-90 transition-opacity"
-            >
-              See consulting <ArrowRight className="h-3.5 w-3.5" />
-            </Link>
-            <Link
-              to="/ventures"
-              className="h-11 px-6 inline-flex items-center text-sm border border-foreground/20 hover:border-foreground/60 transition-colors"
-            >
-              See our ventures
-            </Link>
-          </div>
+            <EyebrowLabel>Applied AI · Infrastructure · Products · Consulting</EyebrowLabel>
+            <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.02] max-w-4xl">
+              Serious AI, built lean.
+              <br />
+              <span className="text-foreground/55">On our stack. On your terms.</span>
+            </h1>
+            <p className="mt-8 text-base md:text-lg text-foreground/70 max-w-2xl leading-relaxed">
+              We build AI that runs in production — and the custom software to scale it. Own
+              infrastructure, open-source private inference, no lock-in. From first POC to
+              multi-tenant enterprise. Through{" "}
+              <a
+                href="https://dcernx.com"
+                className="underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
+              >
+                DcernX
+              </a>{" "}
+              and{" "}
+              <Link
+                to="/ventures#xylor"
+                className="underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
+              >
+                Xylor
+              </Link>
+              , plus our consulting practice, we deliver agentic, generative, computer vision and
+              predictive AI that actually ships.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link
+                to="/consulting"
+                className="h-11 px-6 inline-flex items-center gap-2 bg-foreground text-background text-sm hover:opacity-90 transition-opacity"
+              >
+                See consulting <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+              <Link
+                to="/ventures"
+                className="h-11 px-6 inline-flex items-center text-sm border border-foreground/20 hover:border-foreground/60 transition-colors"
+              >
+                See our ventures
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -186,7 +186,6 @@ export default function Home() {
             <div>GDPR by design</div>
           </div>
         </section>
-
 
         <section className="border-t border-border/40">
           <div className="max-w-5xl mx-auto px-6 py-20">
@@ -385,4 +384,3 @@ function Metric({ v, k }: { v: string; k: string }) {
     </div>
   );
 }
-
