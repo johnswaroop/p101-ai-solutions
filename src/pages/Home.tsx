@@ -108,51 +108,73 @@ export default function Home() {
         }}
       />
       <Page>
-        <section className="max-w-5xl mx-auto px-6 pt-24 pb-20">
-          <EyebrowLabel>Applied AI · Infrastructure · Products · Consulting</EyebrowLabel>
-          <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.02] max-w-4xl">
-            Serious AI, built lean.
-            <br />
-            <span className="text-foreground/55">On our stack. On your terms.</span>
-          </h1>
-          <p className="mt-8 text-base md:text-lg text-foreground/70 max-w-2xl leading-relaxed">
-            We build AI that runs in production — and the custom software to scale it. Own
-            infrastructure, open-source private inference, no lock-in. From first POC to
-            multi-tenant enterprise. Through{" "}
-            <a
-              href="https://dcernx.com"
-              className="underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
-            >
-              DcernX
-            </a>{" "}
-            and{" "}
-            <Link
-              to="/ventures#xylor"
-              className="underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
-            >
-              Xylor
-            </Link>
-            , plus our consulting practice, we deliver agentic, generative, computer vision and
-            predictive AI that actually ships.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Link
-              to="/consulting"
-              className="h-11 px-6 inline-flex items-center gap-2 bg-foreground text-background text-sm hover:opacity-90 transition-opacity"
-            >
-              See consulting <ArrowRight className="h-3.5 w-3.5" />
-            </Link>
-            <Link
-              to="/ventures"
-              className="h-11 px-6 inline-flex items-center text-sm border border-foreground/20 hover:border-foreground/60 transition-colors"
-            >
-              See our ventures
-            </Link>
+        {/* HERO with depth */}
+        <section className="relative overflow-hidden">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 -z-10"
+            style={{
+              background:
+                "radial-gradient(60% 55% at 78% 20%, hsl(var(--foreground) / 0.06) 0%, transparent 60%), radial-gradient(45% 40% at 10% 80%, hsl(var(--foreground) / 0.04) 0%, transparent 60%)",
+            }}
+          />
+          <div className="max-w-5xl mx-auto px-6 pt-24 pb-20">
+            <EyebrowLabel>Applied AI · Infrastructure · Products · Consulting</EyebrowLabel>
+            <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.02] max-w-4xl">
+              Serious AI, built lean.
+              <br />
+              <span className="text-foreground/55">On our stack. On your terms.</span>
+            </h1>
+            <p className="mt-8 text-base md:text-lg text-foreground/70 max-w-2xl leading-relaxed">
+              We build AI that runs in production — and the custom software to scale it. Own
+              infrastructure, open-source private inference, no lock-in. From first POC to
+              multi-tenant enterprise. Through{" "}
+              <a
+                href="https://dcernx.com"
+                className="underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
+              >
+                DcernX
+              </a>{" "}
+              and{" "}
+              <Link
+                to="/ventures#xylor"
+                className="underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
+              >
+                Xylor
+              </Link>
+              , plus our consulting practice, we deliver agentic, generative, computer vision and
+              predictive AI that actually ships.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link
+                to="/consulting"
+                className="h-11 px-6 inline-flex items-center gap-2 bg-foreground text-background text-sm hover:opacity-90 transition-opacity"
+              >
+                See consulting <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+              <Link
+                to="/ventures"
+                className="h-11 px-6 inline-flex items-center text-sm border border-foreground/20 hover:border-foreground/60 transition-colors"
+              >
+                See our ventures
+              </Link>
+            </div>
           </div>
         </section>
 
+        {/* PROOF BAR — concrete numbers */}
+        <section className="border-t border-border/40 bg-foreground/[0.015]">
+          <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-px bg-border/40">
+            <Metric v="~12 min" k="Deck to IC-ready memo (DcernX)" />
+            <Metric v="1,500+" k="Checkpoints reviewed per deal" />
+            <Metric v="2" k="Offices — UK & USA" />
+            <Metric v="0" k="Third parties trained on your data" />
+          </div>
+        </section>
+
+        {/* TRUST STRIP */}
         <section className="border-t border-border/40">
-          <div className="max-w-5xl mx-auto px-6 py-10 flex flex-wrap items-center gap-x-10 gap-y-3 text-[11px] uppercase tracking-[0.22em] text-foreground/50">
+          <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap items-center gap-x-8 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-foreground/50">
             <div>Private inference</div>
             <div className="h-1 w-1 rounded-full bg-foreground/25" />
             <div>Open-source models</div>
@@ -350,6 +372,15 @@ function StackItem({
     <div className="bg-background p-5 flex items-center gap-3">
       <Icon className="h-4 w-4 text-foreground/60" />
       <div className="text-xs">{label}</div>
+    </div>
+  );
+}
+
+function Metric({ v, k }: { v: string; k: string }) {
+  return (
+    <div className="bg-background p-5">
+      <div className="text-2xl md:text-3xl font-light tracking-tight tabular-nums">{v}</div>
+      <div className="text-[11px] text-foreground/55 mt-1 leading-relaxed">{k}</div>
     </div>
   );
 }
