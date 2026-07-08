@@ -108,7 +108,17 @@ export default function Home() {
         }}
       />
       <Page>
-        <section className="max-w-5xl mx-auto px-6 pt-24 pb-20">
+        {/* HERO with depth */}
+        <section className="relative overflow-hidden">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 -z-10"
+            style={{
+              background:
+                "radial-gradient(60% 55% at 78% 20%, hsl(var(--foreground) / 0.06) 0%, transparent 60%), radial-gradient(45% 40% at 10% 80%, hsl(var(--foreground) / 0.04) 0%, transparent 60%)",
+            }}
+          />
+          <div className="max-w-5xl mx-auto px-6 pt-24 pb-20">
           <EyebrowLabel>Applied AI · Infrastructure · Products · Consulting</EyebrowLabel>
           <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.02] max-w-4xl">
             Serious AI, built lean.
