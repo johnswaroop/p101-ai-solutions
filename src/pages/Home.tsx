@@ -159,10 +159,22 @@ export default function Home() {
               See our ventures
             </Link>
           </div>
+          </div>
         </section>
 
+        {/* PROOF BAR — concrete numbers */}
+        <section className="border-t border-border/40 bg-foreground/[0.015]">
+          <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-px bg-border/40">
+            <Metric v="~12 min" k="Deck to IC-ready memo (DcernX)" />
+            <Metric v="1,500+" k="Checkpoints reviewed per deal" />
+            <Metric v="2" k="Offices — UK &amp; USA" />
+            <Metric v="0" k="Third parties trained on your data" />
+          </div>
+        </section>
+
+        {/* TRUST STRIP */}
         <section className="border-t border-border/40">
-          <div className="max-w-5xl mx-auto px-6 py-10 flex flex-wrap items-center gap-x-10 gap-y-3 text-[11px] uppercase tracking-[0.22em] text-foreground/50">
+          <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap items-center gap-x-8 gap-y-2 text-[11px] uppercase tracking-[0.22em] text-foreground/50">
             <div>Private inference</div>
             <div className="h-1 w-1 rounded-full bg-foreground/25" />
             <div>Open-source models</div>
@@ -174,6 +186,7 @@ export default function Home() {
             <div>GDPR by design</div>
           </div>
         </section>
+
 
         <section className="border-t border-border/40">
           <div className="max-w-5xl mx-auto px-6 py-20">
